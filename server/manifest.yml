@@ -1,11 +1,11 @@
   applications:
-  - name: djangoapp
+  - name: PrimoCar
     routes:
-      - route: $HOST.$DOMAIN
+      - route: primo-car.mybluemix.net
     memory: 128M
     buildpack: python_buildpack
-  - name: djangoapp-nginx
+  - name: PrimoCar-nginx
     routes:
-      - route: $HOST.$DOMAIN/static
+      - route: primo-car.mybluemix.net/static
     memory: 128M
     buildpack: staticfile_buildpack
